@@ -9,9 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        AngularGradient(colors: [.red, .yellow, .blue, .green, .orange, .pink , .purple , .black], center: .center)
-        
-        //RadialGradient(colors: [.blue, .black], center: .center, startRadius: 20, endRadius: 200)
+        VStack{
+//            Button("Button 1") {}
+//                .buttonStyle(.bordered)
+//            Button("Button 2", role: .destructive) {}
+//                .buttonStyle(.bordered)
+//            Button("Button 3") {}
+//                .buttonStyle(.borderedProminent)
+//                .tint(.mint)
+//            Button("Button 4", role: .destructive) {}
+//                .buttonStyle(.borderedProminent)
+            // CUSTOM BUTTONS:
+            Button {
+                print("Button was tapped")
+            } label: {
+                Label("Edit", systemImage: "car")
+            }
+        }
     }
 }
 
@@ -20,3 +34,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+ 
